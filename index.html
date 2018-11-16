@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <!-- Personal styles -->
+    <!-- App css -->
     <link rel="stylesheet" type="text/css" href="css/app.css">
 
     <!-- JQuery -->
@@ -45,7 +45,7 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 py-md-0">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -66,26 +66,51 @@
       <ul class="navbar-nav logo">
         <li>
           <a id="logo">
-            <h1 id="logo-first">Issue</h1>
-            <h1 id="logo-second">lutions</h1>
+            <h2 id="logo-first">Issue</h2>
+            <h2 id="logo-second">lutions</h2>
           </a>
         </li>
       </ul>
       <ul class="navbar-nav items">
         <li class="nav-item">
           <a id="user-section">
-            <button type="button" class="btn btn-light"><i class="far fa-user"></i></button>  
+            <button type="button" id="btn-settings" class="btn btn-sm btn-light">
+              <i class="fas fa-cog"></i>
+            </button>
+            <button type="button" id="btn-user" class="btn btn-sm btn-light">
+              <i class="far fa-user"></i>
+            </button>  
           </a>
         </li>
       </ul>
     </nav>
-
-    <div id="draggable" class="ui-widget-content">
-      <p>Drag me to my target</p>
+    <div class="board-header">
+      <div class="board-header-left">
+        <h3 class="board-title">My board</h3>
+      </div>
+      <div class="board-header-settings"></div>
     </div>
-     
-    <div id="droppable" class="ui-widget-header">
-      <p>Drop here</p>
+    
+    <div class="card-deck">
+      <div class="card border-secondary mb-3">
+        <div class="card-header">Lista de tareas</div>
+        <div class="card-body text-secondary"></div>
+      </div>
+      <div class="card border-secondary mb-3">
+        <div class="card-header">En proceso</div>
+        <div class="card-body text-secondary">
+        </div>
+      </div>
+      <div class="card border-secondary mb-3">
+        <div class="card-header">IceBox</div>
+        <div class="card-body text-secondary">
+        </div>
+      </div>
+      <div class="card border-secondary mb-3">
+        <div class="card-header">Hecho</div>
+        <div class="card-body text-secondary">
+        </div>
+      </div>
     </div>
 
   </body>
