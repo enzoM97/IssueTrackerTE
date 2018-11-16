@@ -88,9 +88,13 @@ body{
 .board-title{
 	font-weight: bold;
 }
+.container-fluid{
+	padding-left: 50px;
+	padding-right: 50px;
+	position: relative;
+}
 .card-deck{
 	text-align: center;
-	margin-left: 30px;
 }
 .card{
 	top: 30px;
